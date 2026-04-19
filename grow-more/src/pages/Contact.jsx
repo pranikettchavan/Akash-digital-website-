@@ -50,7 +50,7 @@ const contactMethods = [
 ]
 
 const faqs = [
-  { q: 'How quickly can you start?', a: 'We typically onboard new clients within 3-5 business days. After our discovery call, we\'ll have a strategy draft ready within the first week.' },
+  { q: 'How quickly can you start?', a: 'We typically onboard new clients within 2-3 business days. After our discovery call, we\'ll have a strategy draft ready within the first week.' },
   { q: 'What is your minimum budget?', a: 'We work with budgets starting from ₹10,000/month for focused services. We\'ll recommend a package that maximizes impact for your specific goals.' },
   { q: 'How do you measure results?', a: 'We provide detailed monthly reports covering all agreed KPIs — from impressions and engagement to leads, conversions, and revenue impact. Full transparency.' },
   { q: 'Do you offer flexible contracts?', a: 'We offer both monthly and quarterly options. We believe results should keep you, not contracts — which is why most clients stay with us for years.' },

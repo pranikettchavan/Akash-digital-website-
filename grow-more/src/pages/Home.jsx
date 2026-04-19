@@ -100,10 +100,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <PartnerBadges />
-      <TrustBar />
-      <ServicesPreview />
+      <div className="hidden sm:block"><PartnerBadges /></div>
+      <div className="hidden sm:block"><TrustBar /></div>
+      <div className="hidden sm:block"><ServicesPreview /></div>
       <WhyChooseUs />
+      <div className="block sm:hidden"><PartnerBadges /></div>
+      <div className="block sm:hidden"><TrustBar /></div>
       <Stats />
       <Process />
       <Testimonials />
