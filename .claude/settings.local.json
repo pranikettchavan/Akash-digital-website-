@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:stripe.com)",
+      "WebFetch(domain:linear.app)",
+      "WebFetch(domain:framer.com)",
+      "Bash(cp \"/Users/houfy/Desktop/Akash  digitl/Digital marketing.md/8cf70c75773540cbf9636a2723ac14a5.jpg\" \"/Users/houfy/Desktop/Akash  digitl/grow-more/public/images/img-slide-1.jpg\")",
+      "Bash(cp \"/Users/houfy/Desktop/Akash  digitl/Digital marketing.md/40a092f681eee3f0e21b299ff298040a.jpg\" \"/Users/houfy/Desktop/Akash  digitl/grow-more/public/images/img-slide-2.jpg\")",
+      "Bash(cp \"/Users/houfy/Desktop/Akash  digitl/Digital marketing.md/513d89d7689bc0b5be6c8f949c16e332 \\(1\\).jpg\" \"/Users/houfy/Desktop/Akash  digitl/grow-more/public/images/img-slide-3.jpg\")",
+      "Bash(cp \"/Users/houfy/Desktop/Akash  digitl/Digital marketing.md/331605858994898fbcd1dd0ee8646c7f.jpg\" \"/Users/houfy/Desktop/Akash  digitl/grow-more/public/images/img-slide-4.jpg\")"
+    ]
+  }
+}
