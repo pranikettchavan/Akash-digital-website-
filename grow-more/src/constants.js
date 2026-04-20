@@ -15,7 +15,7 @@ export const BRAND = { name: "Grow More", sub: "Digi Solutions" };
 export const SOCIALS = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/growmoredigitalsolutions",
+    href: "https://www.instagram.com/growmore.digisolutions?igsh=c3JxOXpxa2JmMGIx&utm_source=qr",
     color: "#E1306C",
     bg: "rgba(225,48,108,0.08)",
     border: "rgba(225,48,108,0.2)",
