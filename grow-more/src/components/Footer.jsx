@@ -180,9 +180,9 @@ export default function Footer() {
           <div className="flex items-center gap-4 text-[13px]">
             <Link to="/privacy-policy" className="text-[#4A5268] hover:text-primary transition-colors">Privacy Policy</Link>
             <span className="text-[#9AA3B8]">·</span>
-            <Link to="/terms-and-conditions" className="text-[#4A5268] hover:text-primary transition-colors">Terms &amp; Conditions</Link>
+            <Link to="/terms-of-service" className="text-[#4A5268] hover:text-primary transition-colors">Terms &amp; Conditions</Link>
             <span className="text-[#9AA3B8]">·</span>
-            <Link to="/terms-and-conditions#refund-cancellation-policy" className="text-[#4A5268] hover:text-primary transition-colors">Refund &amp; Cancellation</Link>
+            <Link to="/cancellation" className="text-[#4A5268] hover:text-primary transition-colors">Cancellation &amp; Refund</Link>
           </div>
           
         </div>

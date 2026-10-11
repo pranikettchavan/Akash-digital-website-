@@ -4,8 +4,9 @@ import { EMAIL, PHONE } from '../constants'
 import { refundSections } from '../data/refundPolicy'
 
 const tabs = [
-  { to: '/terms-and-conditions', label: 'Terms & Conditions' },
+  { to: '/terms-of-service', label: 'Terms & Conditions' },
   { to: '/privacy-policy', label: 'Privacy Policy' },
+  { to: '/cancellation', label: 'Cancellation & Refund' },
 ]
 
 function SectionCard({ num, title, content, delay = 0 }) {
@@ -25,7 +26,7 @@ function SectionCard({ num, title, content, delay = 0 }) {
   )
 }
 
-export default function LegalLayout({ active, heading, intro, sections }) {
+export default function LegalLayout({ active, heading, intro, sections, showRefund = true }) {
   return (
     <>
       {/* Hero */}
@@ -38,14 +39,14 @@ export default function LegalLayout({ active, heading, intro, sections }) {
           </motion.h1>
 
           {/* Tabs */}
-          <motion.div className="inline-flex items-center bg-white rounded-2xl p-1.5 shadow-sm border border-[#E2E5F0]" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+          <motion.div className="inline-flex flex-wrap justify-center items-center gap-1 bg-white rounded-2xl p-1.5 shadow-sm border border-[#E2E5F0] max-w-full" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
             {tabs.map((t) => {
               const isActive = t.to === active
               return (
                 <Link
                   key={t.to}
                   to={t.to}
-                  className={`relative px-6 py-2.5 rounded-xl text-[14px] font-bold transition-all duration-250 ${isActive ? 'text-white' : 'text-[#697386] hover:text-[#0A0F2C]'}`}
+                  className={`relative px-4 sm:px-6 py-2.5 rounded-xl text-[13px] sm:text-[14px] font-bold whitespace-nowrap transition-all duration-250 ${isActive ? 'text-white' : 'text-[#697386] hover:text-[#0A0F2C]'}`}
                 >
                   {isActive && <span className="absolute inset-0 bg-grad-primary rounded-xl" style={{ zIndex: 0 }} />}
                   <span className="relative z-10">{t.label}</span>
@@ -72,6 +73,7 @@ export default function LegalLayout({ active, heading, intro, sections }) {
           </div>
 
           {/* Refund & Cancellation Policy */}
+          {showRefund && (
           <div id="refund-cancellation-policy" className="scroll-mt-32">
             <motion.div className="mt-16 mb-8 text-center" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <span className="section-tag-pill">Refund &amp; Cancellation</span>
@@ -86,6 +88,7 @@ export default function LegalLayout({ active, heading, intro, sections }) {
               ))}
             </div>
           </div>
+          )}
 
           {/* Contact box */}
           <motion.div className="mt-10 rounded-2xl p-8 text-center" style={{ background: '#F6F8FD', border: '1px solid #E2E5F0' }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>

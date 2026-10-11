@@ -88,7 +88,7 @@ const sections = [
 export default function TermsConditions() {
   return (
     <LegalLayout
-      active="/terms-and-conditions"
+      active="/terms-of-service"
       heading={<>Terms &amp; <span className="grad-text">Conditions</span></>}
       intro={<>Welcome to <span className="font-semibold text-[#0A0F2C]">Grow More Digi Solutions</span>. These Terms and Conditions govern your use of our website and services. Please read them carefully before engaging with us.</>}
       sections={sections}

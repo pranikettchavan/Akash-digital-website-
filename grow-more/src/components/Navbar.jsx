@@ -212,7 +212,7 @@ export default function Navbar() {
             >
               <p className="text-[11px] text-[#9AA3B8]">© 2026 Grow More Digi Solutions</p>
               <p className="text-[11px] text-[#9AA3B8]">
-                <Link to="/terms-and-conditions" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Terms &amp; Conditions</Link>
+                <Link to="/terms-of-service" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Terms &amp; Conditions</Link>
                 {' · '}
                 <Link to="/privacy-policy" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Privacy Policy</Link>
               </p>

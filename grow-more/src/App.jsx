@@ -10,6 +10,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import TermsConditions from './pages/TermsConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import CancellationPolicy from './pages/CancellationPolicy'
 
 function ScrollToHash() {
   const location = useLocation()
@@ -53,9 +54,12 @@ export default function App() {
             <Route path="/about"    element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact"  element={<Contact />} />
-            <Route path="/terms-and-conditions" element={<TermsConditions />} />
-            <Route path="/privacy-policy"       element={<PrivacyPolicy />} />
-            <Route path="/legal" element={<Navigate to="/terms-and-conditions" replace />} />
+            <Route path="/terms-of-service" element={<TermsConditions />} />
+            <Route path="/privacy-policy"   element={<PrivacyPolicy />} />
+            <Route path="/cancellation"     element={<CancellationPolicy />} />
+            {/* legacy URLs */}
+            <Route path="/terms-and-conditions" element={<Navigate to="/terms-of-service" replace />} />
+            <Route path="/legal" element={<Navigate to="/terms-of-service" replace />} />
           </Routes>
         </motion.main>
       </AnimatePresence>
