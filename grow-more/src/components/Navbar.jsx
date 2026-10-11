@@ -211,9 +211,11 @@ export default function Navbar() {
               transition={{ delay: 0.4 }}
             >
               <p className="text-[11px] text-[#9AA3B8]">© 2026 Grow More Digi Solutions</p>
-              <Link to="/legal" onClick={() => setOpen(false)} className="text-[11px] text-[#9AA3B8] hover:text-primary transition-colors">
-                Terms &amp; Conditions · Privacy Policy
-              </Link>
+              <p className="text-[11px] text-[#9AA3B8]">
+                <Link to="/terms-and-conditions" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Terms &amp; Conditions</Link>
+                {' · '}
+                <Link to="/privacy-policy" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">Privacy Policy</Link>
+              </p>
             </motion.div>
           </motion.div>
         )}
